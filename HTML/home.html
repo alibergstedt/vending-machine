@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="list-group" id="errorMessages"></ul>
+            <h1>Vending Machine</h1>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <div class="col-md-offset-1" id="vendingMachineContents"></div>
+            <!-- dynamically insert vending machine items incrementing id -->
+          </div> <!-- end left column -->
+
+          <div class="col-md-4">
+
+            <form class="form-horizontal" role="form" id="addMoneyForm">
+
+              <div class="form-group">
+                <h1 class="text-center">Total $ In</h1>
+
+                <div class="col-md-6 col-md-offset-3">
+                  <input type="text"
+                  class="form-control"
+                  id="addMoneyMessageField"
+                  disabled/>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-offset-1 col-md-4">
+                  <button type="button" id="addDollar" class="btn btn-default">
+                    Add Dollar
+                  </button>
+                </div>
+                <div class="col-md-offset-1 col-md-4">
+                  <button type="button" id="addQuarter" class="btn btn-default">
+                    Add Quarter
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-offset-1 col-md-4">
+                  <button type="button" id="addDime" class="btn btn-default">
+                    Add Dime
+                  </button>
+                </div>
+                <div class="col-md-offset-1 col-md-4">
+                  <button type="button" id="addNickel" class="btn btn-default">
+                    Add Nickel
+                  </button>
+                </div>
+              </div>
+
+            </form>
+
+              <hr/>
+
+            <form class="form-horizontal" role="form" id="makePurchaseForm">
+
+                <div class="form-group">
+                  <h1 class="text-center">Messages</h1>
+
+                  <div class="col-md-8 col-md-offset-2">
+                    <input type="text"
+                    class="form-control"
+                    id="makePurchaseMessageField"
+                    disabled/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="itemDisplayBox" class="col-md-4 control-label col-md-offset-1">
+                    Item:
+                  </label>
+
+                  <div class="col-md-4">
+                    <input type="text"
+                    class="form-control"
+                    id="itemDisplayBox" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-9 col-md-offset-4">
+                    <button type="button" id="makePurchaseButton" class="btn btn-default">
+                      Make Purchase
+                    </button>
+                  </div>
+                </div>
+
+            </form>
+
+            <hr/>
+
+            <form class="form-horizontal" role="form" id="changeReturnForm">
+
+                <div class="form-group">
+                  <h1 class="text-center">Change</h1>
+
+                  <div class="col-md-10 col-md-offset-1">
+                    <input type="text"
+                    class="form-control"
+                    id="changeMessageField"
+                    disabled/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-4 col-md-offset-4">
+                    <button type="button" id="changeReturnButton" class="btn btn-default">
+                      Change Return
+                    </button>
+                  </div>
+                </div>
+
+                <br>
+
+            </form>
+
+          </div> <!-- end right column -->
+
+        </div> <!-- end row -->
+
+      </div> <!-- end container -->
+
+
+        <!-- #5: Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
